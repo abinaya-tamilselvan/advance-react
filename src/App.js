@@ -1,10 +1,10 @@
 import React from "react";
-import UseStateErrorExample from "./tutorial/usestateErrorExample"
-
+import UseStateBasic from "./tutorial/UseStateBasic";
 function App() {
   return ( <div className ='container'>
      <h2>Advance React Js</h2>
-     <UseStateErrorExample />
+     <UseStateBasic />
+     
      </div>
   );
 }
