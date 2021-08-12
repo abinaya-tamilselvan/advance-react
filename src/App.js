@@ -3,7 +3,8 @@ import React from "react";
 //import LearnJSON from "./tutorial/LearnJSON";
 //import  UseStateErrorExample from './tutorial/usestateErrorExample';
 //import UseStateObject from './tutorial/UseStateObject';
-import UseStateCounter from './tutorial/useStateCounter'
+//import UseStateCounter from './tutorial/useStateCounter'
+import UseStateArray from './tutorial/UseStateArray'
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
      <div className ='container'>
      {/* <UseStateErrorExample /> */}
      {/* <UseStateObject /> */}
-     <UseStateCounter />
+     {/*<UseStateCounter /> */}
+     <UseStateArray />
      
      </div>
   );
