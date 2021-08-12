@@ -4,7 +4,8 @@ import React from "react";
 //import  UseStateErrorExample from './tutorial/usestateErrorExample';
 //import UseStateObject from './tutorial/UseStateObject';
 //import UseStateCounter from './tutorial/useStateCounter'
-import UseStateArray from './tutorial/UseStateArray'
+import UseEffectBasics from './tutorial/UseEffectBasics'
+//import UseStateArray from './tutorial/UseStateArray'
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
      {/* <UseStateErrorExample /> */}
      {/* <UseStateObject /> */}
      {/*<UseStateCounter /> */}
-     <UseStateArray />
+     {/*<UseStateArray /> */}
+     < UseEffectBasics />
      
      </div>
   );
