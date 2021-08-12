@@ -7,7 +7,8 @@ import React from "react";
 //import UseEffectBasics from './tutorial/UseEffectBasics'
 //import UseStateArray from './tutorial/UseStateArray'
 //import LearnJSON from './tutorial/LearnJSON';
-import Form from './tutorial/Form';
+//import Form from './tutorial/Form';
+import Index from './tutorial/Reducer/index'
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
      {/*<UseStateArray /> */}
      {/*< UseEffectBasics />*/}
      {/*<LearnJSON />*/}
-     <Form />
+     {/*<Form />*/}
+     <Index />
      </div>
   );
 }

@@ -2,11 +2,11 @@ import React from 'react'
 
 function Modal({modalContent}) {
     return (
-        <div className='modal'>
-            <p> I am modal</p>
-            
-        </div>
+       <>
+       <div className='modal'></div>
+       <p>Hello I am modal</p>
+       </>
     )
 }
 
-export default Modal;
+export default Modal
