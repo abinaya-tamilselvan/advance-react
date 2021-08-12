@@ -5,38 +5,35 @@ import React from 'react'
 import axios from 'axios'
 
 function LearnJSON() {
+    const handleClick=(b) =>{
+        const promise =axios.post("http://localhost:4000/users",{ //setting the port code
+            name:"paras"}, // set data that we want
+        {headers:{
+            ['content-type']:'application/json' // setting server type
+        }
+    })
 
-    const handleClick = (b) => {
-        const promise = axios.post("http://localhost:4000/users",{  // initalize the port code
-          name: "IronMan"},{                                         // setting up an object we want or create 
-              headers: {
-               ['content-type']: 'application/json'  // setting the server type 
-           
-            }}
-        )
-            promise.then(response => {            // data connection establishment and response from the server   
-            console.log(response);
-         })
-            promise.catch(error=>{             // this is used to console our error in case we get one
-            console.error(error);
-         })
+    promise.then(response =>{
+        console.log(response);
+    })
+    promise.catch(error =>{
+        console.log(error);
+    })
+    let c=b;
+    console.log(c);
+}
 
-         let c = b;
-         console.log(b);
-     }
-
-     const getUsers = () =>
-     {
-         axios.get("http://localhost:4000/users").then(users =>{   {/* we are getting the data from our json server then starting it in users and then consoling the array of the objects*/} 
-             console.log(users);
-         })
-     }
+    const getUsers = () =>{
+        axios.get("http://localhost:4000/users").then(users =>{  //getting data from json file and store it in users and console 
+            console.log(users);
+        })
+    }
 
     return (
         <>
-            <h2> Random Title </h2>
-            <button type="button" className='btn' onClick={handleClick}> post users </button>
-            <button type="button" className='btn' onClick={getUsers}> get users </button> 
+        <button type="button" className="btn" onClick={handleClick}>post users</button>
+        <button type="button" className="btn" onClick={getUsers}>get users</button>
+
         </>
     )
 }

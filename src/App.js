@@ -4,8 +4,10 @@ import React from "react";
 //import  UseStateErrorExample from './tutorial/usestateErrorExample';
 //import UseStateObject from './tutorial/UseStateObject';
 //import UseStateCounter from './tutorial/useStateCounter'
-import UseEffectBasics from './tutorial/UseEffectBasics'
+//import UseEffectBasics from './tutorial/UseEffectBasics'
 //import UseStateArray from './tutorial/UseStateArray'
+//import LearnJSON from './tutorial/LearnJSON';
+import Form from './tutorial/Form';
 
 
 function App() {
@@ -15,8 +17,9 @@ function App() {
      {/* <UseStateObject /> */}
      {/*<UseStateCounter /> */}
      {/*<UseStateArray /> */}
-     < UseEffectBasics />
-     
+     {/*< UseEffectBasics />*/}
+     {/*<LearnJSON />*/}
+     <Form />
      </div>
   );
 }
