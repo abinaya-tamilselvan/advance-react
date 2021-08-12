@@ -1,14 +1,13 @@
 import React from "react";
-//import UseStateBasic from "./tutorial/UseStateBasic";
-//import UseStateCounter from "./tutorial/useStateCounter";
-import UseEffectBasics from "./tutorial/UseEffectBasics";
+import Index from "./tutorial/Reducer/index"
+//import LearnJSON from "./tutorial/LearnJSON";
+//import ToDoList from "./tutorial/ToDoList"
+
 
 function App() {
-  return ( <div className ='container'>
-     <h2>Advance React Js</h2>
-    {/* <UseStateCounter /> */}
-    <UseEffectBasics />
-    {/*<UseStateBasic />*/}
+  return (
+     <div className ='container'>
+      <Index />
      
      </div>
   );
