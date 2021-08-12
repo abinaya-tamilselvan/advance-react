@@ -3,8 +3,9 @@ import React,{useState} from 'react'
 function UseStateErrorExample() {
     let title = "random title";
     const handleClick = (b) =>{
-        let c=b;
+        let  c=b;
         console.log(c);
+        
     }
     return (<React.Fragment>
       <h2>{title}</h2>
