@@ -1,21 +1,22 @@
-import React from 'react'
-import {} from "../data";
-import { Link,useParams} from 'react-router-dom';
-import { tSExportAssignment } from '@babel/types';
+import React,{useState,useEffect} from 'react'
+import {data} from "../data";
+import {Link,useParams} from 'react-router-dom'
 
- function person() {
-     console.log(useParams());
-     const {id} = useParams();
-     useEffect(() => {
-         const newPerson = data.find((person) => person.id ===parseInt(id));
-         tSExportAssignment(newPerson.name)
-     },[])
+function Person() {
+    const [name,setName]= useState("Default State")
+    const {id} =useParams();
+    useEffect(() => {
+        const newPerson = data.find((person) => person.id === parseInt(id));
+        setName(newPerson.name)
+    },[])
     return (
+        <>
         <div>
             <h1>{name}</h1>
-            <Link to="/people" className="btn">
-                Back to Homepage
-            </Link>
+            <Link to="/people" className="btn"> back to people</Link>
         </div>
+        </>
     )
 }
+
+export default Person

@@ -9,9 +9,8 @@ import React from "react";
 //import LearnJSON from './tutorial/LearnJSON';
 //import Form from './tutorial/Form';
 //import Index from './tutorial/Reducer/index'
-//import  ReactRouterDom from './tutorial/React-Router/index'
-import propDrilling from './tutorial/propDrilling';
-
+import  ReactRouterDom from './tutorial/React-Router/index'
+//import PropDrilling from './tutorial/Prop-Drilling';
 function App() {
   return (
      <div className ='container'>
@@ -23,8 +22,8 @@ function App() {
      {/*<LearnJSON />*/}
      {/*<Form />*/}
      {/*<Index />*/}
-     {/*< ReactRouterDom/>*/}
-     <propdrilling />
+     < ReactRouterDom/>
+     {/*<propDrilling />*/}
 
      </div>
   );
