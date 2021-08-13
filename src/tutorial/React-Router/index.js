@@ -6,7 +6,7 @@ import People from "./People";
 import Person from "./person";
 import Home from "./Home";
 import {BrowserRouter as Router,Route,Switch} from "react-router-dom";//
-//we want to use our router we page 
+//we want to use our router  in our web page so that we would require a router which can route 
 
 function ReactRouterDom(){
      return (
